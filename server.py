@@ -5,8 +5,8 @@ from collections import deque
 app = Flask(__name__)
 queue = deque()
 
-@app.route("/". , methods = ['POST'])
-def hello():
+@app.route("/", methods = ['POST'])
+def _update():
 	queue.append((request.args.get("X"), request.args.get("Y")))
 	return "X: " + str(request.args.get("X")) + "\nY: " + str(request.args.get("Y"))
 
