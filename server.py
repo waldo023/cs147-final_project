@@ -17,7 +17,7 @@ def _request():
 		return str(value[0]) + " " + str(value[1])
 	return "NULL"
 
-@app.route("reset/")
+@app.route("/reset/")
 def _reset():
 	if(queue):
 		queue.clear()
